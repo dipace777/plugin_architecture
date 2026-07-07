@@ -17,11 +17,9 @@ export const writeToAFile = Effect.gen(function* () {
   yield* fs.writeFileString(artifactPath, "Hello World from Plugin");
 });
 
-export function readFromAFile() {
-  return Effect.gen(function* () {
-    const fs = yield* FileSystem.FileSystem;
-    const { artifactPath } = yield* artifactPaths;
+export const readFromAFile = Effect.gen(function* () {
+  const fs = yield* FileSystem.FileSystem;
+  const { artifactPath } = yield* artifactPaths;
 
-    return yield* fs.readFileString(artifactPath);
-  });
-}
+  return yield* fs.readFileString(artifactPath);
+});

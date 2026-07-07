@@ -3,6 +3,11 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "install:hello-world": "bun plugins/hello-world/script.ts",
+    "runtime": "bun runtime/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -11,6 +16,7 @@
   },
   "dependencies": {
     "@effect/platform": "^0.96.2",
+    "@effect/platform-bun": "^0.90.0",
     "effect": "^3.21.4",
     "hono": "^4.12.28"
   }

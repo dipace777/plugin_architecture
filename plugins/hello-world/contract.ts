@@ -1,4 +1,5 @@
 import { readFromAFile, writeToAFile } from "./services";
+import type { PluginContract } from "../../runtime/plugin";
 
 const CONTRACT = {
   name: "hello-world",
@@ -16,6 +17,6 @@ const CONTRACT = {
       handler: writeToAFile,
     },
   ],
-};
+} satisfies PluginContract;
 
 export default CONTRACT;

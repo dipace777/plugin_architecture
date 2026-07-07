@@ -1,0 +1,12 @@
+{
+  "pluginPath": "plugins",
+  "runtimePath": "runtime",
+  "plugins": [
+    {
+      "name": "hello-world",
+      "source": "../plugins/hello-world",
+      "entry": "contract.ts",
+      "installedAt": "2026-07-07T10:13:41.216Z"
+    }
+  ]
+}
