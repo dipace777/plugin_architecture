@@ -1,0 +1,17 @@
+{
+  "name": "plugin_architecture",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.96.2",
+    "effect": "^3.21.4",
+    "hono": "^4.12.28"
+  }
+}
