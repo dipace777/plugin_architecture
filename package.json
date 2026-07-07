@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "install:hello-world": "bun plugins/hello-world/script.ts",
+    "build:plugin": "bun scripts/create-plugin-executable.ts",
+    "install:plugin": "bun scripts/install-plugin-executable.ts",
     "runtime": "bun runtime/index.ts",
     "typecheck": "tsc --noEmit"
   },

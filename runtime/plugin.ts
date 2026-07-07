@@ -42,12 +42,9 @@ export type InstalledPlugin = {
   name: string;
   source: string;
   entry?: string;
-  contract?: string;
   installedAt: string;
 };
 
 export type PluginRegistry = {
-  pluginPath: string;
-  runtimePath: string;
   plugins: InstalledPlugin[];
 };

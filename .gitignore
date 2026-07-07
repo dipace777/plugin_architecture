@@ -34,3 +34,7 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 .DS_Store
 
 plugin-artifacts
+plugins-executable
+runtime/.plugin-install-*
+runtime/plugins
+runtime/plugins.json
